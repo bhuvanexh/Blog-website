@@ -1,0 +1,1396 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+
+    scroll-behavior: smooth !important;
+}
+
+
+body {
+    background: linear-gradient(black, rgb(49, 1, 49), rgb(16, 0, 61));
+}
+
+.background--top {
+    position: absolute;
+    background-image: url(./images/background.jpg);
+    background-size: cover;
+    opacity: .7;
+    width: 85%;
+    height: 700px;
+    z-index: -1;
+    top: 0px;
+    filter: drop-shadow(0 0 0.55rem rgba(8, 1, 58, 0.826));
+
+}
+
+nav {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    gap: 20px;
+    position: relative;
+}
+
+.nav--socials .fa {
+    font-size: 28px;
+    color: rgb(255, 255, 255)
+}
+
+.nav--upper {
+    position: relative;
+    display: flex;
+    color: white;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(98, 98, 92, 0.386);
+}
+
+.nav--upper span {
+    font-size: 45px;
+}
+
+.nav--upper button {
+    border-style: none;
+    background: linear-gradient(to right, rgb(33, 153, 239), rgb(5, 35, 186));
+    color: white;
+    font-size: 20px;
+    padding: 10px 50px;
+    border-radius: 500px;
+}
+
+.nav--upper button:active {
+    transform: scale(.97);
+}
+
+.nav--upper button:hover {
+    cursor: pointer;
+    background: linear-gradient(orange, red);
+}
+
+.nav--socials i:hover {
+    transform: scale(1.15);
+}
+
+.nav--socials {
+    height: max-content;
+}
+
+.nav--lower a:hover {
+    transform: scale(1.1);
+    color: blue;
+}
+
+.nav--lower {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.nav--lower a {
+    text-decoration: none;
+    color: rgb(239, 239, 239);
+    font-size: 18px;
+}
+
+.blogs {
+    display: flex;
+    width: 80%;
+    margin-inline: auto;
+    gap: 10px;
+    height: 560px;
+    margin-bottom: 40px;
+}
+
+.blogs img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card--outer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.blogs--card1 {
+    width: 65%;
+    height: 90%;
+    background-image: url(./images/tech.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+
+.card--outer {
+    width: 35%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.blogs--card2 {
+    width: 100%;
+    height: 50%;
+    background-image: url(./images/stocks.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.blogs--card3 {
+    width: 100%;
+    height: 50%;
+    background-image: url(./images/phil.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.blogs--card1:hover,
+.blogs--card2:hover,
+.blogs--card3:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.card--text {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    min-width: 540px;
+    color: white;
+    gap: 20px;
+    backdrop-filter: blur(0px);
+}
+
+.blogs--card1:hover .card--text,
+.blogs--card2:hover .card--text2,
+.blogs--card3:hover .card--text2 {
+
+    backdrop-filter: blur(2px);
+
+}
+
+.card--tag {
+    font-size: 22px;
+    width: max-content;
+    background: linear-gradient(to right, rgb(34, 2, 148), rgb(5, 35, 186));
+    padding: 5px 15px;
+}
+
+.card--text h2 {
+    font-weight: 400;
+    font-size: 45px;
+}
+
+
+.author {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.pfp {
+    display: inline-block;
+    width: 35px;
+    aspect-ratio: 1/1;
+    background-image: url(./images/proo2.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.blogs--cardI {
+    display: flex;
+    align-items: flex-end;
+    box-sizing: border-box;
+    padding: 0 0 20px 20px;
+}
+
+.card--text2 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 10px;
+}
+
+.card--text2 h2 {
+    color: white;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.card--tag2 {
+    color: white;
+    width: max-content;
+    background: linear-gradient(to right, rgb(51, 0, 0), rgb(70, 7, 7));
+    padding: 3px 12px;
+
+}
+
+.card--tag3 {
+    color: white;
+    width: max-content;
+    background: linear-gradient(to right, rgb(59, 17, 51), 70%, rgb(112, 4, 98));
+    padding: 3px 12px;
+}
+
+.author2 {
+    color: white;
+}
+
+.event img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.events {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 140px;
+}
+
+.events--left {
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 80%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+}
+
+.events--grid {
+    margin-left: 30px;
+    height: 80%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    box-sizing: border-box;
+}
+
+.event {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+.event1 {
+    background-image: url(./images/elections.jpg);
+}
+
+.event2 {
+    background-image: url(./images/movies.jpg);
+}
+
+.event3 {
+    background-image: url(./images/festival.jpg);
+}
+
+.event4 {
+    background-image: url(./images/science.jpg);
+}
+
+.event--date {
+    background-color: rgb(0, 144, 197);
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    align-self: flex-end;
+    margin-top: -20px;
+    margin-right: 10px;
+    color: white;
+}
+
+.event--footer {
+    background: linear-gradient(to right, rgb(9, 11, 46), 80%, rgba(0, 109, 65, 0.251));
+    color: rgb(240, 229, 229);
+    padding: 5px 0 5px 10px;
+    font-size: 18px;
+}
+
+.event3 .event--footer {
+    background: linear-gradient(to right, rgb(9, 11, 46), 80%, rgba(0, 109, 65, 0.851));
+
+}
+
+.event:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.events--right h2 {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 32px;
+    color: rgb(0, 144, 197);
+}
+
+.events--right p {
+    font-size: 18px;
+}
+
+.events--rightWrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding-right: 80px;
+}
+
+.events--right {
+    width: 27%;
+    background: linear-gradient(rgb(30, 0, 30), rgb(37, 1, 37));
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    color: white;
+    filter: drop-shadow(0 0 0.55rem rgba(23, 1, 23, 0.6));
+}
+
+.news {
+    width: 90%;
+    height: 700px;
+    position: absolute;
+    background-image: url(./images/midBG.jpg);
+    background-size: cover;
+    z-index: -1;
+    opacity: .7;
+}
+
+.mediaE h1 {
+    font-size: 40px;
+    color: bisque;
+    font-weight: 400;
+}
+
+.mediaE {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 700px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    margin-block: 40px;
+}
+
+.news--cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    backdrop-filter: blur(3px);
+}
+
+.n--card img {
+    max-width: 100%;
+}
+
+.n--card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    width: 20%;
+    filter: saturate(50%);
+}
+
+.n--card h3 {
+    color: rgb(235, 255, 170);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.n--card:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+    filter: saturate(110%);
+}
+
+.n--card p {
+    font-style: italic;
+    font-family: 'Gruppo', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.news--btn:active {
+    transform: scale(.98);
+}
+
+.news--btn:hover {
+    cursor: pointer;
+    background-color: rgb(8, 6, 48);
+    filter: drop-shadow(0 0 0.25rem crimson);
+}
+
+.news--btn {
+    border-style: none;
+    width: 250px;
+    height: 60px;
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+
+.jobs h2 {
+    font-size: 40px;
+}
+
+.jobs--background {
+    width: 95%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(to right, purple, pink);
+}
+
+.jobs {
+    position: relative;
+    width: 100%;
+    margin-block: 50px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.job {
+    display: flex;
+    justify-content: space-around;
+}
+
+.r--left {
+    box-sizing: border-box;
+    width: 40%;
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.r--left button:active {
+    transform: scale(.98);
+}
+
+.r--left button:hover {
+    cursor: pointer;
+    color: rgb(239, 225, 225);
+    background-color: rgb(9, 0, 58);
+    filter: drop-shadow(0 0 0.25rem rgb(20, 150, 220));
+
+}
+
+.r--left button {
+    width: 300px;
+    height: 50px;
+    font-size: 18px;
+    background: #000;
+    border-style: none;
+    color: #fff;
+    align-self: center;
+    border-radius: 5px;
+}
+
+.r--right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.customer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.r--right img {
+    width: 100%;
+}
+
+.customer img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+
+footer {
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.about h1 {
+    color: rgb(152, 255, 255);
+}
+
+.about {
+    width: 30%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact {
+
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 20px;
+    align-items: center;
+    background: linear-gradient(blue, purple);
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+
+.yourInfo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.yourInfo input {
+    width: 45%;
+}
+
+input {
+    border-style: none;
+    outline: none;
+    height: 30px;
+    font-size: 15px;
+    padding-left: 7px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: transparent;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.info--msg {
+    width: 95%;
+}
+
+.contact button:active {
+    transform: scale(.98);
+}
+
+.contact button:hover {
+    cursor: pointer;
+    color: red;
+    background: linear-gradient(to right, rgb(0, 24, 40), rgb(3, 19, 99));
+}
+
+.contact button {
+    border-style: none;
+    width: 150px;
+    height: 30px;
+    background-color: rgb(10, 0, 76);
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+@media (max-width:1200px) {
+    .card--tag {
+        font-size: 18px;
+    }
+
+    .card--text {
+        min-width: 420px;
+    }
+
+    .card--text h2 {
+        font-size: 35px;
+    }
+
+    .events--rightWrap {
+        padding-right: 40px;
+    }
+
+    .card--text2 h2 {
+        font-size: 24px;
+    }
+
+    .blogs {
+        height: 480px;
+    }
+
+    .background--top {
+        height: 620px;
+    }
+
+    .n--card p {
+        font-size: 13px;
+    }
+
+    .news--btn {
+        width: 200px;
+        height: 50px;
+        font-size: 22px;
+    }
+
+    .news,
+    .mediaE {
+        height: 600px;
+    }
+
+    .mediaE h1 {
+        font-size: 35px;
+    }
+
+}
+
+@media (max-width:1050px) {
+
+    .nav--upper span {
+        font-size: 40px;
+    }
+
+    .nav--upper button {
+        font-size: 16px;
+    }
+
+    .nav--socials .fa {
+        font-size: 24px;
+        color: rgb(255, 255, 255)
+    }
+
+    .nav--lower a {
+        font-size: 17px;
+    }
+
+
+    .card--tag {
+        font-size: 16px;
+    }
+
+    .card--text {
+        min-width: 360px;
+    }
+
+    .card--text h2 {
+        font-size: 30px;
+    }
+
+    .card--text2 h2 {
+        font-size: 20px;
+    }
+
+    .card--text2 p {
+        font-size: 13px;
+    }
+
+    .card--tag2,
+    .card--tag3 {
+        font-size: 13px;
+    }
+
+    .blogs {
+        height: 400px;
+    }
+
+    .background--top {
+        height: 540px;
+    }
+
+    .events {
+        height: 550px;
+    }
+
+    .events--right h2 {
+        font-size: 28px;
+    }
+
+    .events--right p {
+        font-size: 17px;
+    }
+
+    .events--right {
+        width: 27%;
+        right: 20px;
+    }
+
+    .event--footer {
+        font-size: 14px;
+    }
+
+    .event--date {
+        width: 50px;
+        height: 30px;
+        margin-top: -15px;
+        font-size: 12px;
+    }
+
+    .events--right p {
+        font-size: 15px;
+    }
+
+    .events--right h2 {
+        font-size: 26px;
+    }
+
+    .n--card p {
+        font-size: 12px;
+    }
+
+    .news--btn {
+        width: 180px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .news,
+    .mediaE {
+        height: 540px;
+    }
+
+    .mediaE h1 {
+        font-size: 32px;
+    }
+
+    .jobs h2 {
+        font-size: 35px;
+    }
+
+    .jobs {
+        height: 500px;
+    }
+
+    .r--left {
+        font-size: 18px;
+    }
+
+    .r--left p {
+        font-size: 15px;
+    }
+
+    .r--left button {
+        width: 250px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .about {
+        width: 40%;
+    }
+
+}
+
+@media (max-width:900px) {
+    .blogs {
+        flex-direction: column;
+        height: 500px;
+        justify-content: center;
+    }
+
+    .blogs--card1 {
+        width: 100%;
+        height: 60%;
+    }
+
+    .card--outer {
+        height: 40%;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .blogs--cardI {
+        height: 100%;
+        width: 50%;
+    }
+
+    .nav--upper span {
+        font-size: 40px;
+    }
+
+    .nav--upper button {
+        font-size: 16px;
+    }
+
+    .nav--socials .fa {
+        font-size: 24px;
+        color: rgb(255, 255, 255)
+    }
+
+    .nav--lower a {
+        font-size: 17px;
+    }
+
+
+    .card--tag {
+        font-size: 16px;
+    }
+
+    .card--text {
+        min-width: 360px;
+    }
+
+    .card--text2 {
+        width: 85%;
+    }
+
+    .card--text h2 {
+        font-size: 30px;
+    }
+
+    .card--text2 h2 {
+        font-size: 20px;
+    }
+
+    .card--text2 p {
+        font-size: 13px;
+    }
+
+    .card--tag2,
+    .card--tag3 {
+        font-size: 14px;
+    }
+
+
+    .background--top {
+        height: 680px;
+    }
+
+    .events {
+        height: 820px;
+        align-items: flex-start;
+        margin-block: 80px 0px;
+    }
+
+    .events--left {
+        height: 70%;
+        width: 100%;
+        border-right: none;
+        align-items: flex-start;
+        padding-top: 40px;
+    }
+
+    .events--grid {
+        height: 80%;
+        width: 90%;
+        margin-inline: auto;
+    }
+
+    .events--rightWrap {
+        position: absolute;
+        width: 100%;
+        height: max-content;
+        display: flex;
+        justify-content: center;
+        bottom: 100px;
+        padding: 0;
+    }
+
+    .events--right {
+        position: relative;
+        right: 0;
+        width: 60%;
+        padding: 25px 18px;
+    }
+
+    .event--footer {
+        font-size: 15px;
+    }
+
+    .n--card h3 {
+        font-size: 15px;
+    }
+
+    .n--card p {
+        font-size: 10px;
+    }
+
+    .news--btn {
+        width: 180px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .news,
+    .mediaE {
+        height: 540px;
+    }
+
+    .mediaE h1 {
+        font-size: 32px;
+    }
+
+    .customer img {
+        width: 80px;
+    }
+
+    .jobs h2 {
+        font-size: 35px;
+    }
+
+    .jobs {
+        height: 400px;
+    }
+
+    .r--left {
+        font-size: 18px;
+    }
+
+    .r--left p {
+        font-size: 14px;
+    }
+
+    .r--left button {
+        width: 200px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .about {
+        width: 40%;
+    }
+
+    .about p {
+        font-size: 14px;
+    }
+
+    .contact {
+        width: 40%;
+    }
+}
+
+@media (max-width:700px) {
+    .blogs {
+        flex-direction: column;
+        height: 500px;
+        justify-content: center;
+    }
+
+    .blogs--card1 {
+        width: 100%;
+        height: 60%;
+    }
+
+    .card--outer {
+        height: 40%;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .blogs--cardI {
+        height: 100%;
+        width: 50%;
+    }
+
+    .nav--upper span {
+        font-size: 40px;
+    }
+
+    .nav--upper button {
+        font-size: 14px;
+        padding: 5px 20px;
+    }
+
+    .nav--socials .fa {
+        font-size: 16px;
+    }
+
+    .nav--lower {
+        gap: 25px;
+    }
+
+    .nav--lower a {
+        font-size: 15px;
+    }
+
+    .blogs--card1 {
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+
+    .card--tag {
+        font-size: 16px;
+    }
+
+    .card--text {
+        min-width: 350px;
+    }
+
+    .card--text2 {
+        width: 85%;
+    }
+
+    .card--text h2 {
+        font-size: 28px;
+    }
+
+    .card--text2 h2 {
+        font-size: 16px;
+    }
+
+    .card--text2 p {
+        font-size: 11px;
+    }
+
+    .card--tag2,
+    .card--tag3 {
+        font-size: 12px;
+    }
+
+
+    .background--top {
+        height: 680px;
+    }
+
+
+
+    .events {
+        height: 600px;
+        align-items: flex-start;
+        margin-block: 80px 0px;
+    }
+
+    .events--left {
+        height: 70%;
+        width: 100%;
+        border-right: none;
+        align-items: flex-start;
+        padding-top: 40px;
+    }
+
+    .events--grid {
+        height: 80%;
+        width: 90%;
+        margin-inline: auto;
+    }
+
+
+
+    .events--right h2 {
+        font-size: 22px;
+    }
+
+    .events--right p {
+        font-size: 14px;
+    }
+
+
+    .events--rightWrap {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        bottom: 40px;
+    }
+
+    .events--right {
+        position: relative;
+        right: 0;
+        width: 60%;
+        padding: 18px 14px;
+    }
+
+    .event--footer {
+        font-size: 15px;
+    }
+
+    .news--cards {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        backdrop-filter: blur(0px);
+        column-gap: 20px;
+        row-gap: 0;
+
+    }
+
+    .n--card {
+        width: 90%;
+    }
+
+    .n--card h3 {
+        font-size: 15px;
+    }
+
+    .n--card p {
+        font-size: 10px;
+    }
+
+    .news--btn {
+        width: 180px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .news,
+    .mediaE {
+        height: 850px;
+    }
+
+    .mediaE h1 {
+        font-size: 32px;
+    }
+
+    .customer img {
+        width: 80px;
+    }
+
+    .jobs h2 {
+        font-size: 35px;
+    }
+
+    .jobs {
+        height: 700px;
+        justify-content: center;
+        gap: 50px;
+        padding-top: 10px;
+    }
+
+    .job {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .r--left {
+        width: 80%;
+        font-size: 23px;
+    }
+
+    .r--left p {
+        font-size: 15px;
+    }
+
+    .r--left button {
+        width: 200px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .r--right {
+        width: 80%;
+    }
+
+    footer {
+        padding: 30px 0;
+        flex-direction: column;
+        height: min-content;
+        gap: 50px;
+    }
+
+    .about {
+        width: 80%;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+
+    .contact {
+        width: 80%;
+    }
+
+}
+
+@media (max-width:500px) {
+    .blogs {
+        flex-direction: column;
+        height: 400px;
+        justify-content: center;
+    }
+
+    .nav--upper span {
+        font-size: 40px;
+    }
+
+    .nav--upper button {
+        font-size: 12px;
+        padding: 4px 16px;
+    }
+
+    .nav--socials .fa {
+        font-size: 14px;
+    }
+
+    .nav--lower {
+        gap: 16px;
+    }
+
+    .nav--lower a {
+        font-size: 12px;
+    }
+
+
+    .card--tag {
+        font-size: 12px;
+    }
+
+    .card--text {
+        min-width: 250px;
+    }
+
+    .card--text2 {
+        width: 85%;
+    }
+
+    .card--text h2 {
+        font-size: 20px;
+    }
+
+    .blogs--card1 {
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+
+    .blogs--cardI {
+        padding-left: 7px;
+        padding-bottom: 7px;
+    }
+
+    .card--text2 h2 {
+        font-size: 13px;
+    }
+
+    .author {
+        font-size: 12px;
+    }
+
+    .card--text2 p {
+        font-size: 8px;
+    }
+
+    .card--tag2,
+    .card--tag3 {
+        font-size: 12px;
+    }
+
+
+    .background--top {
+        height: 580px;
+    }
+
+    .events {
+        height: 500px;
+    }
+
+    .events--right h2 {
+        font-size: 18px;
+    }
+
+    .events--right p {
+        font-size: 13px;
+    }
+
+    .events--rightWrap {
+        bottom: 20px;
+    }
+
+    .events--right {
+        padding: 14px 12px;
+        width: 80%;
+    }
+
+    .event--footer {
+        font-size: 12px;
+    }
+
+    .n--card h3 {
+        font-size: 14px;
+    }
+
+    .n--card p {
+        font-size: 9px;
+    }
+
+    .news--btn {
+        width: 150px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .news,
+    .mediaE {
+        height: 750px;
+    }
+
+    .mediaE h1 {
+        font-size: 28px;
+    }
+
+    .customer img {
+        width: 60px;
+    }
+
+    .jobs h2 {
+        font-size: 28px;
+    }
+
+    .jobs {
+        height: 600px;
+    }
+
+    .r--left {
+        font-size: 18px;
+    }
+
+    .r--left p {
+        font-size: 11px;
+    }
+
+    .r--left button {
+        width: 150px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .about p {
+        font-size: 13px;
+    }
+}
