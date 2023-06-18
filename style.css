@@ -1256,7 +1256,7 @@ input {
     }
 
     .nav--socials .fa {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .nav--lower {
@@ -1329,7 +1329,7 @@ input {
     }
 
     .events--rightWrap {
-        bottom: 20px;
+        bottom: 10px;
     }
 
     .events--right {
