@@ -17,7 +17,7 @@ body {
     position: absolute;
     background-image: url(./images/background.jpg);
     background-size: cover;
-    opacity: .7;
+    opacity: .8;
     width: 85%;
     height: 700px;
     z-index: -1;
@@ -497,6 +497,10 @@ nav {
     justify-content: space-around;
 }
 
+.r--left span {
+    color: black;
+}
+
 .r--left {
     box-sizing: border-box;
     width: 40%;
@@ -523,9 +527,9 @@ nav {
     width: 300px;
     height: 50px;
     font-size: 18px;
+    color: rgb(167, 161, 255);
     background: #000;
     border-style: none;
-    color: #fff;
     align-self: center;
     border-radius: 5px;
 }
@@ -542,7 +546,7 @@ nav {
     width: 100%;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 40px;
 }
 
 .r--right img {
@@ -1240,8 +1244,17 @@ input {
 }
 
 @media (max-width:500px) {
+    .background--top {
+        width: 100%;
+    }
+
+    .nav--upper {
+        width: 95%;
+    }
+
     .blogs {
         flex-direction: column;
+        width: 95%;
         height: 400px;
         justify-content: center;
     }
@@ -1261,6 +1274,7 @@ input {
 
     .nav--lower {
         gap: 16px;
+        width: 95%;
     }
 
     .nav--lower a {
@@ -1273,15 +1287,16 @@ input {
     }
 
     .card--text {
+        width: 90%;
         min-width: 250px;
     }
 
     .card--text2 {
-        width: 85%;
+        width: 90%;
     }
 
     .card--text h2 {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .blogs--card1 {
@@ -1295,7 +1310,7 @@ input {
     }
 
     .card--text2 h2 {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .author {
@@ -1377,11 +1392,11 @@ input {
     }
 
     .r--left {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .r--left p {
-        font-size: 11px;
+        font-size: 13px;
     }
 
     .r--left button {
